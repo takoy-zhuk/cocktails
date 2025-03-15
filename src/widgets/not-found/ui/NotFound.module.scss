@@ -1,0 +1,14 @@
+.notFound {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding: 100px;
+  font-size: 54px;
+  gap: 20px;
+
+  button {
+    font-size: 24px;
+  }
+}

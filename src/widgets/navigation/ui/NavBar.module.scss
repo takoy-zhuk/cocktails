@@ -1,0 +1,43 @@
+.navbar {
+  display: flex;
+  flex-direction: column;
+  padding-top: 40px;
+
+  @media (max-width: 852px) {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 0;
+  }
+
+  .navList {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    gap: 10px;
+    padding-top: 20px;
+
+    @media (max-width: 852px) {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      padding: 20px;
+    }
+
+    & > a {
+      min-width: 100px;
+      justify-content: center;
+      border: 1px solid;
+      border-radius: 50px;
+      text-align: center;
+      padding: 5px;
+      font-size: 16px;
+    }
+  }
+
+  .selected {
+    color: red;
+  }
+}

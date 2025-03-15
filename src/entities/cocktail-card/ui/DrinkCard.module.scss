@@ -1,0 +1,77 @@
+.drinkCard {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  border-radius: 30px;
+  background-color: white;
+  padding: 40px;
+  box-shadow: 5px 3px 3px #f9f6ff;
+
+  @media (max-width: 768px) {
+    position: relative;
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  .info {
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+
+    @media (max-width: 768px) {
+      width: auto;
+    }
+
+    .drinkName {
+      padding: 20px;
+      margin-bottom: 10px;
+    }
+
+    .description {
+      display: flex;
+      flex-direction: column;
+      padding: 20px;
+    }
+
+    .instructions {
+      display: flex;
+      flex-direction: column;
+      padding: 20px;
+    }
+
+    .ingredientsBlock {
+      padding: 20px;
+
+      .ingredients {
+        display: flex;
+        flex-direction: row;
+        gap: 20px;
+      }
+    }
+  }
+
+  .imageBlock {
+    width: 40%;
+    max-width: 300px;
+    padding: 20px;
+
+    @media (max-width: 768px) {
+      align-self: center;
+      text-align: center;
+      width: 100%;
+    }
+
+    img {
+      width: 100%;
+      object-fit: contain;
+      border-radius: 30px;
+      min-width: 150px;
+
+      @media (max-width: 768px) {
+        max-width: 300px;
+        object-fit: contain;
+      }
+    }
+  }
+}
+
