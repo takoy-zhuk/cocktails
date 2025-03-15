@@ -7,7 +7,12 @@ interface PropTypes {
 }
 
 const CocktailsPage = ({ cocktailCode }: PropTypes) => {
-  return <Cocktails cocktailCode={cocktailCode} renderError={(props) => <Error {...props} />} />;
+  return (
+    <Cocktails
+      cocktailCode={cocktailCode}
+      renderError={(props) => <Error {...props} />}
+    />
+  );
 };
 
 export default CocktailsPage;
