@@ -1,2 +1,10 @@
-echo "npx lint-staged" > .husky/pre-commit
-chmod +x .husky/pre-commit
+#!/usr/bin/env sh
+. "$(dirname -- "$0")/_/husky.sh"
+
+echo "Запуск lint-staged..."
+
+
+npx lint-staged
+
+
+echo "lint-staged завершил работу."
