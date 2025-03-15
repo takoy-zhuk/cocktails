@@ -12,7 +12,9 @@ const CocktailsView = ({ drinks, isLoading }: PropTypes) => {
   return (
     <div className={styles.cocktailsList}>
       {isLoading && <Loader />}
-      {drinks?.length === 0 && <span>The list is empty, try another category.</span>}
+      {drinks?.length === 0 && (
+        <span>The list is empty, try another category.</span>
+      )}
       {drinks?.map((drink) => (
         <DrinkCard
           key={drink.id}

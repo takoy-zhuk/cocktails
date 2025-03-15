@@ -11,7 +11,16 @@ interface PropType {
   measures: string[];
 }
 
-const DrinkCard = ({ alcoholic, category, glass, ingredients, institutions, name, imageUrl, measures }: PropType) => {
+const DrinkCard = ({
+  alcoholic,
+  category,
+  glass,
+  ingredients,
+  institutions,
+  name,
+  imageUrl,
+  measures,
+}: PropType) => {
   return (
     <div className={styles.drinkCard}>
       <div className={styles.info}>

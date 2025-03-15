@@ -9,7 +9,17 @@ export class DrinkViewModel {
   ingredients: string[];
   measures: string[];
 
-  constructor({ id, name, category, alcoholic, glass, institutions, imageUrl, ingredients, measures }: DrinkViewModel) {
+  constructor({
+    id,
+    name,
+    category,
+    alcoholic,
+    glass,
+    institutions,
+    imageUrl,
+    ingredients,
+    measures,
+  }: DrinkViewModel) {
     this.id = id;
     this.name = name;
     this.category = category;

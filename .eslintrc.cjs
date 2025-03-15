@@ -1,36 +1,40 @@
 module.exports = {
-    parser: "@typescript-eslint/parser",
+    parser: '@typescript-eslint/parser',
     parserOptions: {
-        "ecmaVersion": 2021,
-        "sourceType": "module"
+        ecmaVersion: 2021,
+        sourceType: 'module',
     },
     env: {
-        "browser": true,
-        "es6": true,
-        "node": true
+        browser: true,
+        es6: true,
+        node: true,
     },
-    plugins: ["react", "react-hooks", "prettier"],
+    settings: {
+        react: {
+            version: "detect"
+        }
+    },
+    plugins: ['react', 'react-hooks', 'prettier'],
     extends: [
-        "eslint:recommended",
-        "plugin:@typescript-eslint/recommended",
-        "plugin:react/recommended",
-        "plugin:prettier/recommended"
+        'eslint:recommended',
+        'plugin:@typescript-eslint/recommended',
+        'plugin:react/recommended',
+        'plugin:prettier/recommended',
     ],
     rules: {
-        "prettier/prettier": [
-            "warn",
+        'prettier/prettier': [
+            'warn',
             {
-                "tabWidth": 2,
-                "useTabs": false,
-                "printWidth": 80,
-                "singleQuote": true,
-                "trailingComma": "es5"
-            }
+                tabWidth: 2,
+                useTabs: false,
+                printWidth: 80,
+                singleQuote: true,
+                trailingComma: 'es5',
+            },
         ],
-        "react/jsx-indent": ["warn", 2],
-        "react/jsx-indent-props": ["warn", 2],
-        "@typescript-eslint/no-unused-vars": "warn",
-        "react/react-in-jsx-scope": "off",
-        "indent": ["warn", 2, { "SwitchCase": 1 }]
-    }
-}
+        'react/jsx-indent': ['warn', 2],
+        'react/jsx-indent-props': ['warn', 2],
+        '@typescript-eslint/no-unused-vars': 'warn',
+        'react/react-in-jsx-scope': 'off',
+    },
+};

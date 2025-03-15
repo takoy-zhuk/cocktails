@@ -10,7 +10,11 @@ const NavBar = () => {
       <h1>Cocktails</h1>
       <div className={styles.navList}>
         {links.map((link) => (
-          <NavLink key={link} to={link} className={({ isActive }) => (isActive ? styles.selected : '')}>
+          <NavLink
+            key={link}
+            to={link}
+            className={({ isActive }) => (isActive ? styles.selected : '')}
+          >
             {link}
           </NavLink>
         ))}

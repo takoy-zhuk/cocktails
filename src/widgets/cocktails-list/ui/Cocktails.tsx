@@ -20,10 +20,18 @@ const Cocktails = observer(({ cocktailCode, renderError }: PropTypes) => {
   };
 
   if (cocktailStore.error) {
-    return renderError({ message: cocktailStore.error, onClick: refreshRequest });
+    return renderError({
+      message: cocktailStore.error,
+      onClick: refreshRequest,
+    });
   }
 
-  return <CocktailsView drinks={cocktailStore.drinks[cocktailCode]} isLoading={cocktailStore.isLoading} />;
+  return (
+    <CocktailsView
+      drinks={cocktailStore.drinks[cocktailCode]}
+      isLoading={cocktailStore.isLoading}
+    />
+  );
 });
 
 export { Cocktails };

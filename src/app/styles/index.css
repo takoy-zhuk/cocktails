@@ -35,19 +35,27 @@ body {
   min-height: 100vh;
 }
 
-body, input, p, span {
-  font-family: Arial;
+body,
+input,
+p,
+span {
+  font-family: Arial, sans-serif;
   font-size: 20px;
   font-weight: 400;
 }
 
 a {
-  font-family: TacticSans-BldIt, italic;
+  font-family: TacticSans-BldIt, italic, sans-serif;
   font-weight: 600;
 }
 
-h1, h2, h3, h4, h5, h6 {
-  font-family: TacticSans-BldIt, italic;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: TacticSans-BldIt, italic, sans-serif;
   margin: 0;
   padding: 0;
   font-weight: 600;
